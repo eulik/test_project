@@ -33,13 +33,13 @@ public class Point {
 
 
 
-    public static String distance(Point a, Point b){
+    public static double distance(Point a, Point b){
 
         double distance = Math.sqrt (Math.pow(a.x - b.x,2) + Math.pow(a.y - b.y,2));
-        return "Distance between Point a and Point b is " + distance;
+        return distance;
     }
 
-    public String distanceTo (Point other){
+    public double distanceTo (Point other){
         return Point.distance (this,other);
     }
 }
