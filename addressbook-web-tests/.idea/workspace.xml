@@ -30,7 +30,7 @@
       <file leaf-file-name="GroupCreationTests01.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/olga/addressbook/GroupCreationTests01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
+            <state relative-caret-position="506">
               <caret line="62" column="81" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="81" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -42,11 +42,31 @@
       <file leaf-file-name="ContactCreationTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/olga/addressbook/ContactCreationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1659">
-              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+            <state relative-caret-position="223">
+              <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonalData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/olga/addressbook/PersonalData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-277">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddressData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/olga/addressbook/AddressData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-101">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1011,11 +1031,11 @@
     <history-entry file="ContactCreationTest_contactCreationTest - 2016.11.07 at 15h 30m 23s.xml">
       <configuration name="ContactCreationTest.contactCreationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GroupCreationTests01_group_creation_tests01 - 2016.11.07 at 14h 23m 26s.xml">
-      <configuration name="GroupCreationTests01.group_creation_tests01" configurationId="TestNG" />
+    <history-entry file="ContactCreationTest_contactCreationTest - 2016.11.07 at 15h 49m 03s.xml">
+      <configuration name="ContactCreationTest.contactCreationTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="GroupCreationTests01_group_creation_tests01 - 2016.11.07 at 14h 26m 09s.xml">
-      <configuration name="GroupCreationTests01.group_creation_tests01" configurationId="TestNG" />
+    <history-entry file="ContactCreationTest_contactCreationTest - 2016.11.07 at 15h 53m 24s.xml">
+      <configuration name="ContactCreationTest.contactCreationTest" configurationId="TestNG" />
     </history-entry>
     <history-entry file="GroupCreationTests01_group_creation_tests01 - 2016.11.07 at 14h 34m 08s.xml">
       <configuration name="GroupCreationTests01.group_creation_tests01" configurationId="TestNG" />
@@ -1142,14 +1162,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/olga/addressbook/GroupData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/olga/addressbook/contact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -1160,7 +1172,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/olga/addressbook/GroupCreationTests01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="506">
           <caret line="62" column="81" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1168,10 +1180,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/olga/addressbook/GroupData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/olga/addressbook/PersonalData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-277">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/olga/addressbook/AddressData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/olga/addressbook/ContactCreationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1659">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        <state relative-caret-position="223">
+          <caret line="47" column="5" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
