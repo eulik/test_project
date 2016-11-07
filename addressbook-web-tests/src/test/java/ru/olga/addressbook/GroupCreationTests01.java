@@ -10,15 +10,19 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
+import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;
 
 public class GroupCreationTests01 {
     FirefoxDriver wd;
-    
+    WebDriverWait wait;
+
     @BeforeMethod
     public void setUp() throws Exception {
         System.setProperty("webdriver.gecko.driver", "C:\\Tools\\geckodriver.exe");
         wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
+
+        wait = new WebDriverWait(wd, 10);
         wd.get("http://localhost/addressbook/");
         login("secret", "admin");
 
@@ -56,7 +60,8 @@ public class GroupCreationTests01 {
         wd.findElement(By.name("new")).click();
     }
      private void fillGroupForm(GroupData groupData){
-        new WebDriverWait(wd, 10).until(ExpectedConditions.elementToBeClickable(By.name("group_name")));
+        //new WebDriverWait(wd, 10).until(ExpectedConditions.elementToBeClickable(By.name("group_name")));
+        wait.until(presenceOfElementLocated(By.name("group_name")));
         wd.findElement(By.name("group_name")).click();
         wd.findElement(By.name("group_name")).clear();
         wd.findElement(By.name("group_name")).sendKeys(groupData.getName());
@@ -71,7 +76,8 @@ public class GroupCreationTests01 {
 
     private void gotoGroupPage() {
         //WebElement xxx = wait.until(presenceOfElementLocated(By.linkText("group page")))
-        new WebDriverWait(wd, 10).until(ExpectedConditions.elementToBeClickable(By.linkText("groups")));
+        //new WebDriverWait(wd, 10).until(ExpectedConditions.elementToBeClickable(By.linkText("groups")));
+        wait.until (presenceOfElementLocated(By.linkText("groups")));
         wd.findElement(By.linkText("groups")).click();
     }
 
