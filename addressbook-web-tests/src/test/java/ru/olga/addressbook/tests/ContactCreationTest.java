@@ -1,4 +1,4 @@
-package ru.olga.addressbook;
+package ru.olga.addressbook.tests;
 
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
@@ -9,6 +9,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.*;
+import ru.olga.addressbook.model.AddressData;
+import ru.olga.addressbook.model.PersonalData;
 
 import static org.openqa.selenium.support.ui.ExpectedConditions.elementToBeClickable;
 import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElementLocated;

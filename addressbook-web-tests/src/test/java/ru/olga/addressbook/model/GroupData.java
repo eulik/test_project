@@ -1,4 +1,4 @@
-package ru.olga.addressbook;
+package ru.olga.addressbook.model;
 
 public class GroupData {
     private final String name;

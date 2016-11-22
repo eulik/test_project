@@ -1,4 +1,4 @@
-package ru.olga.addressbook;
+package ru.olga.addressbook.model;
 
 public class PersonalData {
     private final String firstname;

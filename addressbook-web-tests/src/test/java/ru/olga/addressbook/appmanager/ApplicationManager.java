@@ -1,11 +1,10 @@
-package ru.olga.addressbook;
+package ru.olga.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import ru.olga.addressbook.model.GroupData;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,7 +14,7 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.presenceOfElemen
 /**
  * Created by Olga on 22.11.2016.
  */
-public class TestBase {
+public class ApplicationManager {
     FirefoxDriver wd;
     WebDriverWait wait;
 
@@ -28,8 +27,7 @@ public class TestBase {
         }
     }
 
-    @BeforeMethod
-    public void setUp() throws Exception {
+    public void init() {
         System.setProperty("webdriver.gecko.driver", "C:\\Tools\\geckodriver.exe");
         wd = new FirefoxDriver();
         wd.manage().timeouts().implicitlyWait(1000, TimeUnit.MILLISECONDS);
@@ -37,7 +35,6 @@ public class TestBase {
         wait = new WebDriverWait(wd, 10);
         wd.get("http://localhost/addressbook/");
         login("secret", "admin");
-
     }
 
     private void login(String password, String username) {
@@ -49,19 +46,19 @@ public class TestBase {
         wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
     }
 
-    protected void returnToGroupPage() {
+    public void returnToGroupPage() {
         wd.findElement(By.linkText("group page")).click();
     }
 
-    protected void submitGroupCreation() {
+    public void submitGroupCreation() {
         wd.findElement(By.name("submit")).click();
     }
 
-    protected void initGroupCreation() {
+    public void initGroupCreation() {
         wd.findElement(By.name("new")).click();
     }
 
-    protected void fillGroupForm(GroupData groupData){
+    public void fillGroupForm(GroupData groupData){
         //new WebDriverWait(wd, 10).until(ExpectedConditions.elementToBeClickable(By.name("group_name")));
         wait.until(presenceOfElementLocated(By.name("group_name")));
         wd.findElement(By.name("group_name")).click();
@@ -76,25 +73,24 @@ public class TestBase {
         wd.findElement(By.name("group_footer")).sendKeys(groupData.getFooter());
     }
 
-    protected void gotoGroupPage() {
+    public void gotoGroupPage() {
         //WebElement xxx = wait.until(presenceOfElementLocated(By.linkText("group page")))
         //new WebDriverWait(wd, 10).until(ExpectedConditions.elementToBeClickable(By.linkText("groups")));
-        wait.until (presenceOfElementLocated(By.linkText("groups")));
+        wait.until (elementToBeClickable(By.linkText("groups")));
         wd.findElement(By.linkText("groups")).click();
     }
 
-    @AfterMethod
-    public void tearDown() {
+    public void stop() {
         wd.quit();
     }
 
-    protected void deleteSelectedGroups() {
+    public void deleteSelectedGroups() {
         wait.until (elementToBeClickable (By.name("delete")));
         wd.findElement(By.name("delete")).click();
-        
+
     }
 
-    protected void selectGroup() {
+    public void selectGroup() {
         wd.findElement(By.name("selected[]")).click();
     }
 }
